@@ -27,7 +27,8 @@ const useAuth = create<Auth>()((set, get) => {
     login: async (values, navigate) => {
       try {
         setState({ loading: true });
-
+        console.log(request);
+        
         const {
           data: { token, user },
         } = await request.post<{

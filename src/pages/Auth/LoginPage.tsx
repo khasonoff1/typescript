@@ -19,6 +19,7 @@ const LoginPage = () => {
   const submit = (values: object) => {
     login(values, navigate);
   };
+  
   return (
     <Fragment>
       {loading ? <Loader /> : null}

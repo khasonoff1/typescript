@@ -1,9 +1,5 @@
-import { Fragment } from "react";
-
-import "./style.scss";
-
 const DashboardPage = () => {
-  return <Fragment></Fragment>;
+  return <div>Dashboard</div>;
 };
 
 export default DashboardPage;

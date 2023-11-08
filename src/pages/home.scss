@@ -1,0 +1,26 @@
+.hero {
+  width: 100%;
+  min-height: 560px;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #273146;
+  &__left {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__title{
+    color: #EEEDE8;
+    font-size: 42px;
+    font-weight: 900;
+  }
+  &__desc{
+    color: #EEEDE8;
+    font-size: 22px;
+  }
+}

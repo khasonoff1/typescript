@@ -119,7 +119,7 @@ const AccountPage = () => {
                   <input
                     type="text"
                     style={{
-                      borderBottom: `3px solid ${
+                      borderBottom: `2px solid ${
                         errors.address ? "red" : "black"
                       }`,
                     }}

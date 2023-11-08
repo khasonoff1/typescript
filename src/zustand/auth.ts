@@ -2,15 +2,7 @@ import { message } from "antd";
 
 import Cookies from "js-cookie";
 import { create } from "zustand";
-
-import {
-  ID,
-  LAST_URL_admin,
-  LAST_URL_client,
-  LAST_URL_user,
-  ROLE,
-  TOKEN,
-} from "../constants";
+import { ID, LAST_URL_admin, LAST_URL_client, LAST_URL_user, ROLE, TOKEN } from "../constants";
 import request from "../server/request";
 
 interface Auth {
@@ -42,6 +34,7 @@ const useAuth = create<Auth>()((set, get) => {
           token: string;
           user: { role: string; _id: "string" };
         }>("auth/login", values);
+        
 
         message.success("Successfully logged in!");
 
